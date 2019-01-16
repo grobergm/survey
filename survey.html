@@ -17,12 +17,41 @@
     <p>Input your selection in the select box below:</p>
     <form class="superForm">
       <select class="form-control" id="beverage">
-        <option value="beer">Beer</option>
-        <option value="wine">Wine</option>
-        <option value="liquor">Liquor</option>
+        <option value="Beer">Beer</option>
+        <option value="Wine">Wine</option>
+        <option value="Liquor">Liquor</option>
       </select>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="cat">
+          Cat
+        </label>
+        <label>
+          <input type="radio" name="animal" value="dog">
+          Dog
+        </label>
+        <label>
+          <input type="radio" name="animal" value="reptile">
+          Reptile
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="vacay">When are you planning to vacation:</label>
+        <input id="vacay" class="form-control" type="date">
+      </div>
+      <div class="form-group">
+        <label>
+          <input id="color" type="color" class="form-control">
+          What is yoour FAV Color??
+        </label>
+      </div>
       <button class="btn btn-primary">Submit</button>
     </form>
+    <div>
+      <p class="beverageChoice"> </p>
+      <p class="petChoice"></p>
+      <p class="vacayDay"></p>
+    </div>
     </div>
   </body>
 </html>

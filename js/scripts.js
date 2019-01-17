@@ -3,6 +3,7 @@
 $(function() {
   $(".superForm").submit(function(event){
     event.preventDefault();
+    var userName = $("input#yourName").val();
 
     var beverage = $("select#beverage").val();
     $(".beverageChoice").text(beverage);
@@ -14,8 +15,12 @@ $(function() {
     $(".vacayDay").text(vacayDay);
 
     var favColor= $("#color").val();
-    console.log(favColor)
     $("body").css("background-color",favColor);
 
+    if(!userName){
+      $("input#yourName").addClass("is-invalid")
+    } else if (userName){
+      $("input#yourName").addClass("is-valid");
+    }
   });
 });

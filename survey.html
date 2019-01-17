@@ -16,6 +16,14 @@
     <h1>Here is a survey we would really like you to fill out!</h1>
     <p>Input your selection in the select box below:</p>
     <form class="superForm">
+      <label for="yourName">Enter Your Name:</label>
+      <input id="yourName" class="form-control is-invalid" type="text">
+      <div class="invalid-feedback">
+        Please enter your name...
+      </div>
+      <div class="valid-feedback">
+        Thanks!! ^_^
+      </div>
       <select class="form-control" id="beverage">
         <option value="Beer">Beer</option>
         <option value="Wine">Wine</option>
